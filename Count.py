@@ -20,15 +20,8 @@ class Count():
 
             return {"State": 0,
                     "Return": f"Number Of Files:{number_of_files}, Number of SubDirectories:{number_of_sub_dirs}",
-                    "Command Name": f"{Count.__name__}"}
+                    "Command Name": f"{Count.__name__}", "Extra": number_of_files}
         except Exception as e:
-            return {"State": -1, "Return": repr(e), "Command Name": f"{Count.__name__}"}
+            return {"State": -1, "Return": repr(e), "Command Name": f"{Count.__name__}" , "Extra":0}
 
 
-def main():
-    mv = Count("C:\project test")
-    print(mv.exe())
-
-
-if __name__ == "__main__":
-    main()

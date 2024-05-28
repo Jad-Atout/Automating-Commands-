@@ -1,1 +1,5 @@
-Categorize C:\project_test
+Count C:\project_test
+Count C:\project_test
+Count C:\intelFPGA_lite
+Categorize C:\project_test\sub_Dir
+Delete jad.txt C:\project_test\sub_Dir

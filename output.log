@@ -1,8 +1,0 @@
-2024-05-26 21:50:40,426 INFO -----------------------------------------------------------
-2024-05-26 21:50:40,426 INFO This is command #1
-2024-05-26 21:50:40,426 INFO Categorize Command Failed
-2024-05-26 21:50:40,426 INFO Output OSError(22, 'The filename, directory name, or volume label syntax is incorrect')
-2024-05-26 21:52:36,638 INFO -----------------------------------------------------------
-2024-05-26 21:52:36,638 INFO This is command #1
-2024-05-26 21:52:36,638 INFO Categorize Command Successful
-2024-05-26 21:52:36,638 INFO Output Directory project_test Was Successfully Categorized

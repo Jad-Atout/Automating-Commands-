@@ -11,8 +11,9 @@ class Categorize:
         try:
             small_file_directory = os.path.join(self.dir, 'small_files')
             large_file_directory = os.path.join(self.dir, 'large_files')
-            os.makedirs(small_file_directory)
-            os.makedirs(large_file_directory)
+            if not os.path.exists(small_file_directory) :
+                os.makedirs(small_file_directory)
+                os.makedirs(large_file_directory)
             threshold_bytes_size = self.threshold_size * 1024
             for item in os.listdir(self.dir):
                 file_path = os.path.join(self.dir, item)
