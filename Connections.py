@@ -71,7 +71,6 @@ class ScriptExecutor:
         self.files_writer(self.configs["Output"])
 
     def debugger_log_writer(self, log_path):
-
         logger = logging.getLogger(log_path)
         logger.setLevel(logging.INFO)
         handler = logging.FileHandler(log_path)

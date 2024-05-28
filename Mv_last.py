@@ -19,14 +19,3 @@ class Mv_last:
         except Exception as e:
             return {"State": -1,
                     "Return": repr(e), "Command Name": f"{Mv_last.__name__}"}
-
-
-def main():
-    mv = Mv_last("C:\project test\sub_Dir", "C:\project test")
-    print(mv.exe())
-
-
-if __name__ == "__main__":
-    main()
-
-# to be tested

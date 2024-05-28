@@ -24,12 +24,3 @@ class ListFiles:
 
     def exe(self):
         return self.list_files(self.path)
-
-
-def main():
-    mv = ListFiles("C:\proje test")
-    print(mv.exe())
-
-
-if __name__ == "__main__":
-    main()

@@ -22,7 +22,7 @@ class SortFiles():
                     sort_files = sorted(files, key=os.path.getsize, reverse=self.DESC)
                 else:
                     return {"State":-1,"Return":"Undefined Criteria","Command Name":f"{SortFiles.__name__}"}
-            return {"State":0,"Return":files,"Command Name":"SortFiles"}
+            return {"State":0,"Return":sort_files,"Command Name":"SortFiles"}
         except Exception as e:
             return {"State": -1, "Return": repr(e), "Command Name": f"{SortFiles.__name__}"}
 
