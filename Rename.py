@@ -1,16 +1,18 @@
 import os.path
 
 
-class Rename():
-    def __init__(self, old_name, new_name, dir):
+class Rename:
+    def __init__(self, old_name, new_name, directory):
         self.old_name = old_name
         self.new_name = new_name
-        self.dir = dir
+        self.directory = directory
 
     def exe(self):
         try:
-            old_path = os.path.join(self.dir, self.old_name)
-            new_path = os.path.join(self.dir, self.new_name)
+            # Creating old and new path for the file
+            old_path = os.path.join(self.directory, self.old_name)
+            new_path = os.path.join(self.directory, self.new_name)
+            # Checking if the sent item is a file
             if os.path.isfile(old_path):
                 os.rename(old_path, new_path)
                 return 0

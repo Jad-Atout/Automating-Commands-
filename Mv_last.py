@@ -14,7 +14,8 @@ class Mv_last:
             files = data["Return"]
             shutil.move(files[0], self.destination_dir)
             return {"State": 0,
-                    "Return": f"File {os.path.basename(files[0])} was successfully Moved to {os.path.dirname(self.destination_dir)}",
+                    "Return": f"File {os.path.basename(files[0])} "
+                              f"was successfully Moved to "f"{os.path.dirname(self.destination_dir)}",
                     "Command Name": f"{Mv_last.__name__}"}
         except Exception as e:
             return {"State": -1,
